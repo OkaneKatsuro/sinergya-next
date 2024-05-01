@@ -16,26 +16,26 @@ export default function Footer() {
 
           <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
             <div>
-              <p className="text-xl pb-4">Карта сайта</p>
-              <p className="text-xl">Главная</p>
-              <p className="text-xl">Новости</p>
-              <p className="text-xl">Партнеры</p>
+              <p className=" pb-4">Карта сайта</p>
+              <p>Главная</p>
+              <p>Новости</p>
+              <p>Партнеры</p>
             </div>
           </div>
           <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
             <div>
-              <p className="text-xl pb-4">Фонд</p>
-              <p className="text-xl">Цели и задачи</p>
-              <p className="text-xl">Отчеты</p>
-              <p className="text-xl">Реквизиты</p>
+              <p className=" pb-4">Фонд</p>
+              <p>Цели и задачи</p>
+              <p>Отчеты</p>
+              <p>Реквизиты</p>
             </div>
           </div>
           <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
             <div>
-              <p className="text-xl pb-4">Информация</p>
-              <p className="text-xl">История</p>
-              <p className="text-xl">О нас</p>
-              <p className="text-xl">Документы</p>
+              <p className=" pb-4">Информация</p>
+              <p>История</p>
+              <p>О нас</p>
+              <p>Документы</p>
             </div>
           </div>
         </div>
