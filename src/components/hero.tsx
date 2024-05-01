@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 
 const Hero = () => {
   const [typedText, setTypedText] = useState('');
-  const text = "Sinergian";
+  const text = "Фонд развития культурно-делового сотрудничества городов побратимов Санкт-Петербурга 'СИНЕРГИЯ'";
 
   useEffect(() => {
     let currentIndex = 0;//создаем переменную для обозночения индекса символа в тексте
@@ -34,9 +34,9 @@ const Hero = () => {
         muted
         loop
       ></video>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="absolute inset-0 flex items-center justify-center text-white">
-        <h1 className="text-4xl font-bold">{typedText}</h1>
+      
+      <div className="absolute inset-0 flex items-center  text-white inset-y-0 left-0 pl-20 ">
+        <h1 className="text-4xl  font-bold ">{typedText}</h1>
       </div>
     </section>
   );

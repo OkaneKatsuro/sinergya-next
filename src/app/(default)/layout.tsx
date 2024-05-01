@@ -8,6 +8,7 @@ export default function DefaultLayout({
     <>
       <main>
         {children}
+        
       </main>
     </>
   )

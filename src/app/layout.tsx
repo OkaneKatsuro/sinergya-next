@@ -1,3 +1,4 @@
+import Footer from '@/components/ui/footer'
 import Header from '@/components/ui/header'
 
 
@@ -19,6 +20,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen overflow-hidden">
           <Header/>
           {children}
+          
         </div>
       </body>
     </html>
