@@ -12,7 +12,7 @@ const Input: React.FC<InputProps> = ({ name, placeholder }) => {
   return (
     <div className="mt-2">
       <label htmlFor="username" className="block text-sm font-medium leading-6">
-        {placeholder}
+        {name}
       </label>
       <div className="flex border-black border-b-2 focus-within:border-sky-500">
         <input
