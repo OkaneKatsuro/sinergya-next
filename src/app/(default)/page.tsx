@@ -5,7 +5,7 @@ import Faq from "@/components/faq";
 import Form from "@/components/form";
 import Hero from "@/components/hero";
 import QrBlock from "@/components/qrblock";
-import Towns from "@/components/towns";
+
 import Footer from "@/components/ui/footer";
 
 export const metadata = {
@@ -19,7 +19,6 @@ export default function Home() {
       <About1 />
       <About2 />
       <Faq />
-      <Towns />
       <Anket />
       <QrBlock />
       <Form />
