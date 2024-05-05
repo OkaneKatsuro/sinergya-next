@@ -22,7 +22,6 @@ export default function Home() {
       <Anket />
       <QrBlock />
       <Form />
-      <Footer />
     </>
   );
 }
