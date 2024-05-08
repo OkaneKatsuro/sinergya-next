@@ -1,0 +1,9 @@
+.relative {
+    .hover\:rotate-45 {
+        transition: transform 0.3s ease; // добавляем плавность анимации
+
+        &:hover {
+            transform: rotate(45deg);
+        }
+    }
+}
