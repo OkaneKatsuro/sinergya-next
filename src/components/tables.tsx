@@ -5,12 +5,6 @@ export default function Table() {
   return (
     <div className="overflow-x-auto mt-16">
       {/* Контейнер с текстом и изображением */}
-      <div className="text-center md:text-left">
-    <h2 className="text-3xl font-bold mb-4 text-center mt-16">Дружба народов в цифрах</h2>
-    <article className="text-pretty">
-      <p className="text-lg mb-4 text-center">Важное место во внешних связях Санкт-Петербурга занимает сотрудничество с зарубежными городами и регионами, начало которым было положено в 1953 году, когда были установлены связи с финским городом Турку. В настоящее время 93 зарубежных города и 30 зарубежных регионов имеют двусторонние документы о сотрудничестве с Санкт-Петербургом. Санкт-Петербург в России является рекордсменом по количеству партнерских соглашений с другими сообществами.</p>
-    </article>
-  </div>
       {/* Таблица */}
       <div className="shadow-md rounded-lg p-8">
         <table className="min-w-full divide-y divide-gray-200">
