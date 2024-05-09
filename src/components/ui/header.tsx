@@ -14,7 +14,7 @@ export default function Header() {
           </a>
           <p className="text-3xl text-violet-600">Синергия</p>
           <a href="#" className="text-sm ">
-            Партнеры
+            Города-побратимы
           </a>
           <a href="#" className="text-sm ">
             Контакты
