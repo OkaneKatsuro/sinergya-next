@@ -16,7 +16,7 @@ export default function About2() {
           </div>
           <Image
   className="absolute top-0 right-0"
-  src=""
+  src="/map.png"
   alt="shape3"
   width={600}
   height={800} 
