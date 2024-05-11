@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import "@/components/Offcanvas.scss";
+import { MdClose } from "react-icons/md";
+import { IconContext } from "react-icons";
 
 interface OffcanvasProps {
   onClose: () => void;
@@ -10,8 +12,16 @@ const Offcanvas: React.FC<OffcanvasProps> = ({ onClose }) => {
   return (
     <div className="offcanvas flex items-center ">
       <div className=" absolute top-0">
-        <button type="button" className=" text-white" onClick={onClose}>
-          fdsf
+        <button
+          type="button"
+          className=" text-white mx-3 my-3"
+          onClick={onClose}
+        >
+          <IconContext.Provider
+            value={{ className: "shared-class", size: "35" }}
+          >
+            <MdClose />
+          </IconContext.Provider>
         </button>
       </div>
       <div className=" px-12">

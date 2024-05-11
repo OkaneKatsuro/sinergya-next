@@ -4,6 +4,11 @@ import Offcanvas from "@/components/ui/Offcanvas";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropOpen, setIsDropOpen] = useState(false);
+
+  const openDrop = () => {
+    setIsDropOpen(true);
+  };
 
   const openOffcanvas = () => {
     setIsOpen(!isOpen);
@@ -26,7 +31,7 @@ const Header = () => {
           <a href="#" className="text-sm ">
             Новости
           </a>
-          <p className="text-3xl text-violet-600">Синергия</p>
+          <p className="text-4xl font-bold text-violet-600">СИНЕРГИЯ</p>
           <a href="#" className="text-sm ">
             Города-побратимы
           </a>
