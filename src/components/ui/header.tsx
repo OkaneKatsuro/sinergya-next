@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import useOffcanvasState from '../../hooks/useOffcanvasState';
 import Offcanvas from './Offcanvas';
 import FondPages from './FondPages'; // Импортируем компонент FondPages
+import useOffcanvasState from '@/hooks/useOffcanvasState';
 
 const Header = () => {
   const { isOffcanvasOpen, toggleOffcanvas } = useOffcanvasState();
