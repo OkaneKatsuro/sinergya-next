@@ -1,5 +1,5 @@
 import Input from "./ui/inputs/forminput";
-import "./Form.scss";
+import "@/components/styles/Form.scss";
 
 export default function Form() {
   return (

@@ -1,5 +1,5 @@
 import Input from "./ui/inputs/forminput";
-import "./Anket.scss";
+import "@/components/styles/Anket.scss";
 
 export default function Anket() {
   return (
@@ -29,8 +29,14 @@ export default function Anket() {
                 </select>
               </div>
               <div className="container flex flex-col">
-                <p className="text-xl pb-3">Ваше мнение о культурном обмене с городами-побратимами</p>
-                <textarea className="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-indigo-500" rows={4} placeholder="Напишите ваше мнение"></textarea>
+                <p className="text-xl pb-3">
+                  Ваше мнение о культурном обмене с городами-побратимами
+                </p>
+                <textarea
+                  className="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:border-indigo-500"
+                  rows={4}
+                  placeholder="Напишите ваше мнение"
+                ></textarea>
               </div>
             </div>
           </div>
@@ -40,7 +46,9 @@ export default function Anket() {
             <div className="m-9">
               <form>
                 <div className="">
-                  <h2 className="text-3xl font-semibold">Отправьте свой ответ</h2>
+                  <h2 className="text-3xl font-semibold">
+                    Отправьте свой ответ
+                  </h2>
                 </div>
                 <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-8">
                   <div className="col-span-4">
