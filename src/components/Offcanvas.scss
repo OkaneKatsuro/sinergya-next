@@ -1,0 +1,17 @@
+.offcanvas {
+  animation: move 1s ease forwards;
+  transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+@keyframes move {
+  to {
+    transform: translateX(0);
+  }
+}

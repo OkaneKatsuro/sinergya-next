@@ -1,27 +1,22 @@
-'use client'
-import React from 'react';
-import useOffcanvasState from '../../hooks/useOffcanvasState';
-import Offcanvas from './Offcanvas';
+"use client";
+import React, { useState } from "react";
+import Offcanvas from "@/components/ui/Offcanvas";
 
 const Header = () => {
-  const { isOffcanvasOpen, toggleOffcanvas } = useOffcanvasState();
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Используем 'useClient' для обеспечения корректной работы на стороне клиента
-  const isClient = typeof window !== 'undefined';
+  const openOffcanvas = () => {
+    setIsOpen(!isOpen);
+  };
 
-  // Проверяем, открыты ли контакты, и рендерим компонент Offcanvas, если это так
-  const renderOffcanvas = () => {
-    if (isOffcanvasOpen) {
-      const OffcanvasComponent = isClient ? require('./Offcanvas').default : null; // Ленивая загрузка Offcanvas
-      return OffcanvasComponent && <OffcanvasComponent />;
-    }
-    return null;
+  const closeOffcanvas = () => {
+    setIsOpen(false);
   };
 
   return (
     <header className="bg-slate-200/75 h-16 z-10 fixed top-0 w-full">
       <nav className="mx-auto flex max-w-7xl justify-center p-2 px-8">
-      <div className=" flex gap-x-12 items-end  ">
+        <div className=" flex gap-x-12 items-end  ">
           <a href="#" className="text-sm ">
             Главная
           </a>
@@ -36,16 +31,22 @@ const Header = () => {
             Города-побратимы
           </a>
           <div className="flex gap-x-12 items-end">
-          <button onClick={toggleOffcanvas} className="text-sm focus:outline-none">Контакты</button>
-        </div>
+            <button
+              onClick={openOffcanvas}
+              className="text-sm focus:outline-none"
+            >
+              Контакты
+            </button>
+          </div>
           <a href="#" className="text-sm ">
             Страницы
           </a>
         </div>
       </nav>
-      {renderOffcanvas()}
+
+      {isOpen && <Offcanvas onClose={closeOffcanvas} />}
     </header>
   );
-}
+};
 
 export default Header;
