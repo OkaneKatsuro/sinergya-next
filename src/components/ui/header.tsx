@@ -17,7 +17,11 @@ const menuItems: MenuItem[] = [
     children: [
       {
         title: "История",
+<<<<<<< HEAD
         route: "/towns",
+=======
+        route: "/history",
+>>>>>>> fbf8f28d66477beb75804c86f880024aa4e985e7
       },
       {
         title: "Цели и задачи",
