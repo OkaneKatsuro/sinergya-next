@@ -21,14 +21,14 @@ const Header = () => {
   return (
     <header className="bg-slate-200/75 h-16 z-10 fixed top-0 w-full">
       <nav className="mx-auto flex max-w-7xl justify-center p-2 px-8">
-        <div className=" flex gap-x-12 items-end  ">
-          <a href="#" className="text-sm ">
+        <div className="flex gap-x-12 items-end">
+          <a href="#" className="text-sm">
             Главная
           </a>
-          <a href="#" className="text-sm ">
+          <a href="#" className="text-sm">
             O нас
           </a>
-          <a href="#" className="text-sm ">
+          <a href="#" className="text-sm">
             Новости
           </a>
           <p className="text-4xl font-bold text-violet-600">СИНЕРГИЯ</p>
@@ -48,8 +48,8 @@ const Header = () => {
           </a>
         </div>
       </nav>
-
-      {isOpen && <Offcanvas onClose={closeOffcanvas} />}
+      {/* Рендерим компонент Offcanvas */}
+      {renderOffcanvas()}
     </header>
   );
 };
