@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./About1.scss";
+import "@/components/styles/About1.scss";
 
 export default function About1() {
   return (

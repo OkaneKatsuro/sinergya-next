@@ -1,14 +1,49 @@
 "use client";
 import React, { useState } from "react";
 import Offcanvas from "@/components/ui/Offcanvas";
+import Dropdown from "./FondPages";
+import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
 
+export interface MenuItem {
+  title: string;
+  route?: string;
+  children?: MenuItem[];
+}
+
+const menuItems: MenuItem[] = [
+  {
+    title: "Products",
+    children: [
+      {
+        title: "История",
+        route: "/towns",
+      },
+      {
+        title: "Цели и задачи",
+        route: "/goalsandtasks",
+      },
+      {
+        title: "Новости",
+        route: "/news",
+      },
+      {
+        title: "Партнеры",
+        route: "/partners",
+      },
+      {
+        title: "Отчеты",
+        route: "/reports",
+      },
+      {
+        title: "Реквизиты",
+        route: "/requisites",
+      },
+    ],
+  },
+];
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDropOpen, setIsDropOpen] = useState(false);
-
-  const openDrop = () => {
-    setIsDropOpen(true);
-  };
 
   const openOffcanvas = () => {
     setIsOpen(!isOpen);
@@ -43,9 +78,17 @@ const Header = () => {
               Контакты
             </button>
           </div>
-          <a href="#" className="text-sm ">
-            Страницы
-          </a>
+          <div className="flex gap-8 items-center text-sm justify-center">
+            {menuItems.map((item) => {
+              return item.hasOwnProperty("children") ? (
+                <Dropdown item={item} />
+              ) : (
+                <Link className="hover:text-blue-500" href={item?.route || ""}>
+                  {item.title}d
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </nav>
 

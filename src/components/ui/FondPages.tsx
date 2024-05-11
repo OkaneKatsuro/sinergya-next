@@ -1,28 +1,60 @@
-'use client'
-import React from 'react';
-import "@/components/FondPages.scss"; // импорт стилей
+import React, { useState } from "react";
+import Link from "next/link";
 
-const FondPages = () => {
-  const submenuItems = [
-    { label: 'История', href: 'about.html' },
-    { label: 'Цели и задачи', href: 'pricing.html' },
-    { label: 'Новости', href: 'blog.html' },
-    { label: 'Партнеры', href: 'blog-details.html' },
-    { label: 'Отчеты', href: '404.html' },
-    { label: 'Реквизиты', href: '404.html' }
-  ];
+import { MenuItem } from "@/components/ui/header";
+
+import { IconContext } from "react-icons";
+import { IoIosArrowDown } from "react-icons/io";
+
+interface Props {
+  item: MenuItem;
+}
+
+export default function Dropdown(props: Props) {
+  const { item } = props;
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const menuItems = item?.children ? item.children : [];
+
+  const toggle = () => {
+    setIsOpen((old) => !old);
+  };
+
+  const transClass = isOpen ? "flex" : "hidden";
 
   return (
-    <div className="relative">
-      <ul className="ud-submenu">
-        {submenuItems.map((item, index) => (
-          <li key={index}>
-            <a href={item.href} className="ud-submenu-link">{item.label}</a>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div className="relative flex items-center justify-center">
+        <button className="hover:text-blue-400 flex flex-row " onClick={toggle}>
+          Страницы
+          <IconContext.Provider
+            value={{ className: "shared-class pl-1", size: "20" }}
+          >
+            <IoIosArrowDown />
+          </IconContext.Provider>
+        </button>
+        <div
+          className={`absolute top-10 z-30 w-max h-max flex flex-col py-4 bg-slate-200/75 rounded-md ${transClass}`}
+        >
+          {menuItems.map((item) => (
+            <Link
+              key={item.route}
+              className="hover:text-blue-400 px-4 py-1"
+              href={item?.route || ""}
+              onClick={toggle}
+            >
+              {item.title}
+            </Link>
+          ))}
+        </div>
+      </div>
+      {isOpen ? (
+        <div
+          className="fixed top-0 bottom-0 left-0 z-20 bg-black/40"
+          onClick={toggle}
+        ></div>
+      ) : (
+        <></>
+      )}
+    </>
   );
-};
-
-export default FondPages;
+}

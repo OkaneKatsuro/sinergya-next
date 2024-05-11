@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/components/Offcanvas.scss";
+import "@/components/styles/Offcanvas.scss";
 import { MdClose } from "react-icons/md";
 import { IconContext } from "react-icons";
 
