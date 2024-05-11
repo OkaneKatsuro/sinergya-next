@@ -48,8 +48,8 @@ const Header = () => {
           </a>
         </div>
       </nav>
-      {/* Рендерим компонент Offcanvas */}
-      {renderOffcanvas()}
+
+      {isOpen && <Offcanvas onClose={closeOffcanvas} />}
     </header>
   );
 };
