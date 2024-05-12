@@ -28,11 +28,19 @@ const menuItems: MenuItem[] = [
         route: "/news",
       },
       {
-        title: "Партнеры",
+        title: "Услуги в сфере миграции",
         route: "/partners",
       },
       {
-        title: "Отчеты",
+        title: "Экономика Сaнкт-Петербурга",
+        route: "/reports",
+      },
+      {
+        title: "Культура Сaнкт-Петербурга",
+        route: "/culture",
+      },
+      {
+        title: "Экономика Сaнкт-Петербурга",
         route: "/reports",
       },
       {
