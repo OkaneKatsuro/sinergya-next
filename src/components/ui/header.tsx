@@ -44,6 +44,10 @@ const menuItems: MenuItem[] = [
         route: "/reports",
       },
       {
+        title: "Духовно-нравственные ценности",
+        route: "/reports",
+      },
+      {
         title: "Реквизиты",
         route: "/requisites",
       },
