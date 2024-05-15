@@ -51,6 +51,10 @@ const menuItems: MenuItem[] = [
         title: "Реквизиты",
         route: "/requisites",
       },
+      {
+        title: "Отчеты",
+        route: "/requisites",
+      },
     ],
   },
 ];
