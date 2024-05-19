@@ -1,42 +1,26 @@
-'use client'
-import { useState, useEffect, useRef } from 'react';
+import React from 'react';
 
 export default function QrBlock() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      container.scrollTo && container.scrollTo({
-        left: container.clientWidth * activeIndex,
-        behavior: 'smooth',
-      });
-    }
-  }, [activeIndex]);
-
   return (
-    <section className="relative flex bg-white h-max z-1 w-full py-32">
+    <section className="relative flex bg-white h-max z-1 w-full">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-3xl font-bold pb-10 text-center">Информация для иностранных граждан</h2>
-        <div ref={containerRef} className="overflow-x-auto snap-x snap-mandatory">
-          <div className="grid grid-cols-3 gap-8">
-            <div className="snap-center">
-              <img src="qr/Uz_blank.png" alt="Left Image" className="w-full h-auto" />
-            </div>
-            <div className="snap-center">
-              <img src="qr/uz1qr-code.gif" alt="QR Code" className="w-full h-auto" />
-            </div>
-          </div>
-        </div>
-        
+        <ul className="font-bold text-black">
+          <li className="hover:text-black transition duration-300">
+            <a href="/uzbek" className="block text-3xl hover:bg-gray-200 p-2 rounded-md">
+              Буклеты на узбекском языке (o'zbek tilida)
+            </a>
+          </li>
+          <li className="hover:text-black transition duration-300">
+            <a href="/kyrgyz" className="block text-3xl hover:bg-gray-200 p-2 rounded-md">
+              Буклеты на киргизском языке (Кыргыз тили)
+            </a>
+          </li>
+          <li className="hover:text-black transition duration-300">
+            <a href="/tajik" className="block text-3xl hover:bg-gray-200 p-2 rounded-md">
+              Буклеты на таджикском языке (бо забони точики)
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   );
