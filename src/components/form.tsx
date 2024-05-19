@@ -18,7 +18,7 @@ export default function Form() {
               <div className="container flex flex-col">
                 <div className="container flex flex-col">
                   <p className="text-xl pb-3">Как мы можем помочь?</p>
-                  <p>info@yourdomain.com телефон</p>
+                  <p>info@yourdomain.com телефонн</p>
                 </div>
               </div>
             </div>
