@@ -1,5 +1,7 @@
+"use client";
 import Input from "./ui/inputs/forminput";
 import "@/components/styles/Form.scss";
+import { POST } from "@/app/api/send";
 
 export default function Form() {
   return (
@@ -39,6 +41,7 @@ export default function Form() {
                       <Input name="Телефон" placeholder="+7(XXX)-XXX-XX-XX" />
                       <div className=" flex justify-center items-center">
                         <button
+                          onClick={POST}
                           type="button"
                           className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
                         >
@@ -49,6 +52,15 @@ export default function Form() {
                   </div>
                 </div>
               </form>
+              <div>
+                <button
+                  onClick={POST}
+                  type="button"
+                  className="  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+                >
+                  Отправть письмо
+                </button>
+              </div>
             </div>
           </div>
         </div>
