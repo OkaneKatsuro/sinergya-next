@@ -13,12 +13,12 @@ export default function Form() {
             <div className="flex flex-row m-9 pt-14 space-x-10">
               <div className="container flex flex-col">
                 <p className="text-xl pb-3">Наше расположение</p>
-                <p>Новоостровский проспект, дом 36 лит.С</p>
+                <p>улица Славянская, дом 3</p>
               </div>
               <div className="container flex flex-col">
                 <div className="container flex flex-col">
                   <p className="text-xl pb-3">Как мы можем помочь?</p>
-                  <p>info@yourdomain.com телефонн</p>
+                  <p>fond.synergy@mail.ru</p>
                 </div>
               </div>
             </div>
