@@ -21,7 +21,7 @@ const menuItems: MenuItem[] = [
       },
       {
         title: "Цели и задачи",
-        route: "/goalsandtasks",
+        route: "aim",
       },
       {
         title: "Новости",
@@ -29,23 +29,19 @@ const menuItems: MenuItem[] = [
       },
       {
         title: "Услуги в сфере миграции",
-        route: "/partners",
+        route: "/migration",
       },
       {
         title: "Экономика Сaнкт-Петербурга",
-        route: "/reports",
+        route: "/economics",
       },
       {
         title: "Культура Сaнкт-Петербурга",
         route: "/culture",
       },
       {
-        title: "Экономика Сaнкт-Петербурга",
-        route: "/reports",
-      },
-      {
         title: "Духовно-нравственные ценности",
-        route: "/reports",
+        route: "/petersburgSoul",
       },
       {
         title: "Реквизиты",
@@ -53,7 +49,7 @@ const menuItems: MenuItem[] = [
       },
       {
         title: "Отчеты",
-        route: "/requisites",
+        route: "/reports",
       },
     ],
   },
@@ -73,17 +69,17 @@ const Header = () => {
     <header className="bg-slate-200/75 h-16 z-10 fixed top-0 w-full">
       <nav className="mx-auto flex max-w-7xl justify-center p-2 px-8">
         <div className="flex gap-x-12 items-end">
-          <a href="#" className="text-sm">
+          <a href="/default" className="text-sm">
             Главная
           </a>
-          <a href="#" className="text-sm">
+          <a href="/history" className="text-sm">
             O нас
           </a>
-          <a href="#" className="text-sm">
+          <a href="/news" className="text-sm">
             Новости
           </a>
           <p className="text-4xl font-bold text-violet-600">СИНЕРГИЯ</p>
-          <a href="#" className="text-sm ">
+          <a href="/towns" className="text-sm ">
             Города-побратимы
           </a>
           <div className="flex gap-x-12 items-end">

@@ -18,10 +18,10 @@ export default function About2() {
             </p>
           </div>
           <Image
-            className="absolute top-0 right-0"
+            className="top-0 right-0"
             src="/map.png"
             alt="shape3"
-            width={600}
+            width={400}
             height={800}
           />
         </div>

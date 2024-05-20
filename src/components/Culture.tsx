@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Culture() {
     return (
       <section className="relative flex bg-white h-max z-1 w-full py-32">

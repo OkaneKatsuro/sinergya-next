@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Migration() {
     return (
       <section className="relative bg-white h-max z-1 w-full py-32 flex justify-center">

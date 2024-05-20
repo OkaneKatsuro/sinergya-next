@@ -1,12 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import Input from "./ui/inputs/forminput";
 import "@/components/styles/Form.scss";
 
 export default function Table() {
   return (
-    <div className="overflow-x-auto mt-16">
-      {/* Контейнер с текстом и изображением */}
-      {/* Таблица */}
-      <div className="shadow-md rounded-lg p-8">
+    <div className="overflow-x-auto">
+      
+      <div className="shadow-md rounded-lg">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>

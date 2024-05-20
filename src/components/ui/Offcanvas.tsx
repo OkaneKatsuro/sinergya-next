@@ -27,12 +27,12 @@ const Offcanvas: React.FC<OffcanvasProps> = ({ onClose }) => {
       <div className=" px-12">
         <div className="col-12 flex flex-col justify-center items-center space-y-4">
           <p className="text-xl font-bold text-center">
-            Контактная информация или информация про организацию
+            Контактная информация про организацию
           </p>
-          <h3 className="text-2xl font-semibold">Контакты</h3>
-          <p className="text-base">+7 (812) 123-45-67</p>
-          <p className="text-base">+7 (911) 123-45-67</p>
-          <p className="text-base">Новоостровский проспект, дом 36 лит.С</p>
+          <p className="text-base">Вся Россия: +7 (911) 109-09-79</p>
+          <p className="text-base">Санкт-Петербург: +7 (911) 109-09-79</p>
+          <p className="text-base">Электронная почта: fond.synergy@mail.ru</p>
+          <p className="text-base">Адрес: ул Славянская, дом 3</p>
           <h3 className="text-2xl font-semibold">Режим работы</h3>
           <p className="text-base">C 10:00 до 21:00 (Пн-Пт)</p>
           <p className="text-base">С 11:00 до 20:00 (Сб-Вс)</p>

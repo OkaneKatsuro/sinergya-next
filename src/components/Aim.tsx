@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function Aim() {
   return (
-    <section className="relative flex bg-white h-max z-1 w- py-32">
+    <section className="relative bg-white h-max z-1 w-full py-32 flex justify-center">
       <div className="mx-20 flex flex-col space-y-7">
-        <div className="max-w-screen-lg mx-auto ">
+        <div className="max-w-screen-lg ">
           <h2 className="text-3xl font-bold mb-8 text-center">
             Основные направления Фонда
           </h2>
@@ -63,15 +63,14 @@ export default function Aim() {
               </p>
             </li>
           </ul>
-        </div>
-
-        <a
+          <a
           href="Ustav.pdf"
           download
           className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
         >
           Устав фонда "Синергия"
         </a>
+        </div>
       </div>
     </section>
   );

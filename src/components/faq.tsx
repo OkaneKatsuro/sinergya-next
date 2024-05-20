@@ -41,7 +41,7 @@ const Faq: React.FC = () => {
           <div className=" ">
             <ExpandableText
               text={"AUE"}
-              title={"Конференции городов-побратимов Санкт-Петербурга"}
+              title={"Конференции городов-побратимов"}
             />
           </div>
           <div className="  ">
