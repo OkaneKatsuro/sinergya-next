@@ -40,13 +40,13 @@ const Faq: React.FC = () => {
           </div>
           <div className=" ">
             <ExpandableText
-              text={"AUE"}
+              text={"KK"}
               title={"Конференции городов-побратимов"}
             />
           </div>
           <div className="  ">
             <ExpandableText
-              text={"AUE"}
+              text={"KK"}
               title={"Проектная деятельность фонд СИНЕРГИЯ"}
             />
           </div>
