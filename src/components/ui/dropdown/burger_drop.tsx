@@ -1,3 +1,5 @@
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -10,7 +12,7 @@ interface Props {
   item: MenuItem;
 }
 
-export default function Dropdown(props: Props) {
+export default function BurgerDropdown(props: Props) {
   const { item } = props;
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const menuItems = item?.children ? item.children : [];
@@ -24,19 +26,15 @@ export default function Dropdown(props: Props) {
   return (
     <>
       <div className="relative flex items-center justify-center">
-        <button
-          className="focus:text-blue-400 flex flex-row items-center "
-          onClick={toggle}
-        >
-          О нас
+        <button className="hover:text-blue-400 flex flex-row " onClick={toggle}>
           <IconContext.Provider
-            value={{ className: "shared-class pl-1", size: "20" }}
+            value={{ className: "block md:hidden shared-class", size: "35" }}
           >
-            <IoIosArrowDown />
+            <GiHamburgerMenu />
           </IconContext.Provider>
         </button>
         <div
-          className={`absolute top-10 z-30 w-max h-max flex flex-col py-4 bg-slate-200/75 rounded-md ${transClass}`}
+          className={`absolute top-10 right-0 z-30 w-max h-max flex flex-col py-4 bg-slate-200/75 rounded-md ${transClass}`}
         >
           {menuItems.map((item) => (
             <Link
@@ -61,3 +59,30 @@ export default function Dropdown(props: Props) {
     </>
   );
 }
+interface BurgerTextProps {
+  text: string;
+}
+const BurgerDrop: React.FC<BurgerTextProps> = ({ text }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setExpanded(!expanded);
+  };
+
+  return (
+    <div className="flex flex-col rounded-md border-2 max-w-md py-5 px-5 relative">
+      <button onClick={toggleExpand}>
+        <IconContext.Provider
+          value={{ className: "block md:hidden shared-class", size: "35" }}
+        >
+          <GiHamburgerMenu />
+        </IconContext.Provider>
+      </button>
+      {expanded && (
+        <div className="mt-2 inset-x-0 top-0">
+          <p className="text-gray-700">{text}</p>
+        </div>
+      )}
+    </div>
+  );
+};

@@ -4,6 +4,9 @@ import Offcanvas from "@/components/ui/Offcanvas";
 import Dropdown from "./FondPages";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Image from "next/image";
+
+import BurgerDropdown from "./dropdown/burger_drop";
 
 export interface MenuItem {
   title: string;
@@ -66,21 +69,28 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-slate-200/75 h-20 z-10 fixed top-0 w-full">
-      <nav className="mx-auto flex max-w-7xl justify-center p-2 px-8">
-        <div className=""></div>
-        <div className="flex gap-x-12 items-end">
-          <a href="/default" className="text-sm">
-            Главная
-          </a>
-          <a href="/history" className="text-sm">
-            O нас
-          </a>
-          <a href="/news" className="text-sm">
-            Новости
-          </a>
-          <p className="text-4xl font-bold text-violet-600 ">СИНЕРГИЯ</p>
-
+    <header className="   bg-slate-200/75  z-10 border-gray-200 px-4 lg:px-6 py-5 dark:bg-gray-800">
+      <div className="flex  justify-between items-center mx-auto max-w-screen-xl">
+        <div className="flex flex-row space-x-2  ">
+          <Link className="hidden md:flex flex-col justify-items-end" href="/">
+            <div className="flex  mb-[-10px] flex-row-reverse   ">
+              <div className="  text-xl  right-0 text-right">ФОНД</div>
+            </div>
+            <div className="  text-3xl font-extrabold text-violet-600  ">
+              СИНЕРГИЯ
+            </div>
+          </Link>
+          <div className=" hidden md:flex w-1 bg-black  "></div>
+          <div className=" flex items-center   ">
+            <Image
+              src="./atom_black.svg"
+              alt="atom_black"
+              width={40}
+              height={40}
+            />
+          </div>
+        </div>
+        <div className=" hidden md:flex  items-center justify-end space-x-10 mx-10">
           <a href="/towns" className="text-sm ">
             Города-побратимы
           </a>
@@ -92,20 +102,27 @@ const Header = () => {
               Контакты
             </button>
           </div>
-          <div className="flex gap-8 items-center text-sm justify-center">
-            {menuItems.map((item) => {
-              return item.hasOwnProperty("children") ? (
-                <Dropdown item={item} />
-              ) : (
-                <Link className="hover:text-blue-500" href={item?.route || ""}>
-                  {item.title}
-                </Link>
-              );
-            })}
-          </div>
+          {menuItems.map((item) => {
+            return item.hasOwnProperty("children") ? (
+              <Dropdown item={item} />
+            ) : (
+              <Link className="hover:text-blue-500" href={item?.route || ""}>
+                {item.title}
+              </Link>
+            );
+          })}
         </div>
-      </nav>
 
+        {menuItems.map((item) => {
+          return item.hasOwnProperty("children") ? (
+            <BurgerDropdown item={item} />
+          ) : (
+            <Link className="hover:text-blue-500" href={item?.route || ""}>
+              {item.title}
+            </Link>
+          );
+        })}
+      </div>
       {isOpen && <Offcanvas onClose={closeOffcanvas} />}
     </header>
   );
