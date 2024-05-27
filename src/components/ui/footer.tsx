@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section className=" relative bg-black h-96   ">
+    <section className=" relative bg-black h-80  ">
       <div className=" pl-8 flex">
         <div className="grid grid-cols-4 gap-4 text-white px-7 pt-7 basis-4/5  size-fit z-20">
           <div className="text-xl pl-5 grid-rows-subgrid-3 gap-4  w-40 ">
@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
+          <div className=" hidden md:flex text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
             <div>
               <p className=" pb-4">Карта сайта</p>
               <p>Главная</p>
@@ -22,7 +22,7 @@ export default function Footer() {
               <p>Партнеры</p>
             </div>
           </div>
-          <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
+          <div className=" hidden md:flex text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
             <div>
               <p className=" pb-4">Фонд</p>
               <p>Цели и задачи</p>
@@ -30,7 +30,7 @@ export default function Footer() {
               <p>Реквизиты</p>
             </div>
           </div>
-          <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
+          <div className=" hidden md:flex text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
             <div>
               <p className=" pb-4">Информация</p>
               <p>История</p>
@@ -40,10 +40,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="px-12 py-8">
+      <div className="hidden md:flex px-12 py-8">
         <hr className="w-full h-0.5 border-0 bg-white/50 place-self-center   " />
       </div>
-      <div className="flex flex-row justify-between gap-6 px-12 ">
+      <div className="hidden md:flex flex-row justify-between gap-6 px-12 ">
         <p className="text-white">2023 Фонд "СИНЕРГИЯ"</p>
         <p className="text-white">
           Все права на сайт защищены и охраняются законодательством РФ
