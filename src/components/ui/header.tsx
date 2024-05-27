@@ -69,7 +69,7 @@ const Header = () => {
     <header className="bg-slate-200/75 h-16 z-10 fixed top-0 w-full">
       <nav className="mx-auto flex max-w-7xl justify-center p-2 px-8">
         <div className="flex gap-x-12 items-end">
-          <a href="/default" className="text-sm">
+          <a href="/(default)" className="text-sm">
             Главная
           </a>
           <a href="/history" className="text-sm">
