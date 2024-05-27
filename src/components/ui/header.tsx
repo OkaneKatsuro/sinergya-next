@@ -70,7 +70,7 @@ const Header = () => {
       <nav className="mx-auto flex max-w-7xl justify-center p-2 px-8">
         <div className=""></div>
         <div className="flex gap-x-12 items-end">
-          <a href="/default" className="text-sm">
+          <a href="/(default)" className="text-sm">
             Главная
           </a>
           <a href="/history" className="text-sm">

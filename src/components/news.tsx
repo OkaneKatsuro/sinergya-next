@@ -17,13 +17,13 @@ export default function News() {
       image: "darVostok.jpg",
       link: "https://www.dp.ru/a/2018/10/24/Konferencija_o_sozdanii_ezh"
     },
-    {
+    /*{
       date: "Dec 22, 2023",
       title: "The no-fuss guide to upselling and cross selling",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       image: "assets/images/Петру.jpg",
       link: "blog-details.html"
-    }
+    }*/
   ];
 
   return (
