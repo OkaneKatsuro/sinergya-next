@@ -1,5 +1,6 @@
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
+import Header2 from "@/components/ui/header2";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex flex-col min-h-screen overflow-hidden">
-          <Header />
+          <Header2 />
           {children}
           <Footer />
         </div>
