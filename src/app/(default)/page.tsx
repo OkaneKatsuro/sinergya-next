@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <About1 />
       <About2 />
+      <About1 />
       <Faq />
       <Anket />
       <QrBlock />

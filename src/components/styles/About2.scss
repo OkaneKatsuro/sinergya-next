@@ -1,45 +1,52 @@
-.about2{
-    background: #F3F4FE;
-}
-/* About2.scss */
-.image-container img {
-    transition: transform 0.3s ease, border-radius 0.3s ease;
-  }
-  
-  .image-container.hovered img {
-    transform: scale(1.1);
-    border-radius: 12px;
-  }
-  
-  .image-container {
-    transition: transform 0.5s ease-in-out;
-  }
-
-  @keyframes pulsate {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
+.about2 {
   .image-container {
     img {
       transition: transform 0.3s ease, border-radius 0.3s ease;
-  
+
       &.pulsate {
         animation: pulsate 2s infinite;
       }
     }
-  
+
     &.hovered img {
       transform: scale(1.1);
       border-radius: 12px;
     }
+
+    & img {
+      border-radius: 12px;
+    }
   }
-  
-  
+
+  .transform {
+    @media (min-width: 640px) {
+      &.scale-110 {
+        transform: scale(1.1) rotate(-6deg);
+      }
+
+      &.scale-75 {
+        transform: scale(0.75) rotate(6deg) translateX(0.5rem) translateY(3.75rem);
+      }
+
+      &.scale-150 {
+        transform: scale(1.5) translateY(2.75rem);
+      }
+
+      &.translate-x-20 {
+        transform: translateX(5rem) translateY(1rem);
+      }
+    }
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

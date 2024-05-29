@@ -1,8 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client"
 import Image from "next/image";
 import "@/components/styles/About1.scss";
+import { useEffect } from "react";
 
 export default function About1() {
+  useEffect(() => {
+    const images = document.querySelectorAll('.image-container img') as NodeListOf<HTMLImageElement>;
+
+    images.forEach((image: HTMLImageElement) => {
+      image.classList.add('pulsate');
+    });
+  }, []);
   return (
     <section className=" relative flex  bg-white h-max z-1 w-    py-32 ">
       <div className=" mx-20  flex flex-col space-y-7">
@@ -87,6 +96,9 @@ export default function About1() {
             </div>
           </div>
         </div>
+        <div className="image-container absolute top-0 right-0 mb-8 mr-8 z-1">
+        <Image src="./atom.svg" alt="atom" width={200} height={200} />
+      </div>
       </div>
     </section>
   );
