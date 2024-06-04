@@ -15,7 +15,7 @@ export default function About1() {
     });
   }, []);
   return (
-    <section className=" relative flex  bg-white h-max z-1 w-    py-32 ">
+    <section className=" relative flex  bg-white h-max z-1 py-10">
       <div className=" mx-20  flex flex-col space-y-7">
         <div className="flex-col w-3/5 space-y-9">
           <p className="text-5xl font-bold  ">Мы – То, Что Мы Делаем</p>

@@ -34,6 +34,10 @@
     width: 150px; /* уменьшение размера атома */
     height: 150px; /* уменьшение размера атома */
   }
+  .footer-column {
+    display: block;
+    margin-bottom: 1rem;
+  }
   
   @keyframes pulsate {
     0% {
@@ -49,11 +53,17 @@
       opacity: 1;
     }
   }
-  
-  /* Стили для маленьких экранов */
-  @media (max-width: 640px) {
+
+/* Стили для маленьких экранов */
+@media (max-width: 640px) {
     .grid-cols-1 {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    /* Стили для каждого элемента в столбик */
+    .footer-column {
+      display: block;
+      margin-bottom: 1rem;
     }
   }
   
