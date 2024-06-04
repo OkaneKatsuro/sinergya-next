@@ -1,6 +1,17 @@
 .about2 {
   .image-container {
+    width: 50%;
+    padding-top: 40%; /* Aspect ratio 16:9 */
+    position: relative;
+    margin: 0 auto; /* Добавляем автоматичесные отступы по бокам для выравнивания по центру */
+
     img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: transform 0.3s ease, border-radius 0.3s ease;
 
       &.pulsate {
@@ -19,7 +30,7 @@
   }
 
   .transform {
-    @media (min-width: 640px) {
+    @media (min-width: 1200px) {
       &.scale-110 {
         transform: scale(1.1) rotate(-6deg);
       }
@@ -37,16 +48,47 @@
       }
     }
   }
-}
 
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
-  50% {
-    transform: scale(1.05);
+
+  @media (max-width: 1200px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .text-container {
+      width: 24rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .image-container:not(:first-child) {
+        display: none; // Скрыть все изображения, кроме первого
+      }
+    }
   }
-  100% {
-    transform: scale(1);
+
+  @media (max-width: 640px) {
+    .image-grid {
+      display: none; // Скрыть все изображения на очень маленьких экранах
+    }
   }
 }
