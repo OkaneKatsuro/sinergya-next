@@ -8,7 +8,7 @@ export default function QrBlock() {
         <ul className="font-bold text-black">
           <li className="hover:text-black transition duration-300">
             <a href="/uzbek" className="block text-3xl hover:bg-gray-200 p-2 rounded-md">
-              Буклеты на узбекском языке (o'zbek tilida)
+              Буклеты на русском языке
             </a>
           </li>
           <li className="hover:text-black transition duration-300">
