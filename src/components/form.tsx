@@ -4,9 +4,9 @@ import "@/components/styles/Form.scss";
 
 export default function Form() {
   return (
-    <section className=" section relative  h-max ">
-      <div className=" flex flex-row w-124 z-1 ">
-        <div className="basis-2/3 flex justify-start items-center">
+    <section className=" section flex justify-center">
+      <div className=" flex flex-row z-1">
+        <div className="flex items-center mt-20">
           <div className=" container w-max  rounded flex flex-col ">
             <div className="m-9 text-5xl">Свяжитесь с нами</div>
             <div className="flex flex-row m-9 pt-14 space-x-10">
@@ -23,7 +23,7 @@ export default function Form() {
             </div>
           </div>
         </div>
-        <div className=" basis-1/3 flex justify-center items-center py-28">
+        <div className="flex justify-start items-center py-28">
           <div className=" bg-white drop-shadow-lg container w-max   rounded  py-8">
             <div className="m-9 ">
               <form>
