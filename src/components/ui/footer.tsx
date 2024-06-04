@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import "@/components/styles/Footer.scss";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -13,24 +14,42 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:col-span-2">
-          <div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 lg:col-span-2">
+          <div className="footer-column flex flex-col">
             <p className="text-xl font-bold pb-2">Карта сайта</p>
-            <p>Главная</p>
-            <p>Новости</p>
-            <p>Партнеры</p>
+            <Link href="/" passHref>
+              <span className="text-sm cursor-pointer">Главная</span>
+            </Link>
+            <Link href="/news" passHref>
+              <span className="text-sm cursor-pointer">Новости</span>
+            </Link>
+            <Link href="/towns" passHref>
+              <span className="text-sm cursor-pointer">Города-побратимы</span>
+            </Link>
           </div>
-          <div>
+          <div className="footer-column flex flex-col">
             <p className="text-xl font-bold pb-2">Фонд</p>
-            <p>Цели и задачи</p>
-            <p>Отчеты</p>
-            <p>Реквизиты</p>
+            <Link href="/aim" passHref>
+              <span className="text-sm cursor-pointer">Цели и задачи</span>
+            </Link>
+            <Link href="/reports" passHref>
+              <span className="text-sm cursor-pointer">Отчеты</span>
+            </Link>
+            <Link href="/requisites" passHref>
+              <span className="text-sm cursor-pointer">Реквизиты</span>
+            </Link>
           </div>
-          <div>
+          <div className="footer-column flex flex-col">
             <p className="text-xl font-bold pb-2">Информация</p>
-            <p>История</p>
-            <p>О нас</p>
-            <p>Документы</p>
+            <Link href="/history" passHref>
+              <span className="text-sm cursor-pointer">История</span>
+            </Link>
+            <Link href="/culture" passHref>
+              <span className="text-sm cursor-pointer">Культура</span>
+            </Link>
+            <Link href="/economics" passHref>
+              <span className="text-sm cursor-pointer">Экономика</span>
+            </Link>
           </div>
         </div>
       </div>

@@ -3,13 +3,6 @@ import React, { useEffect } from 'react';
 import "@/components/styles/About2.scss";
 
 export default function About2() {
-  useEffect(() => {
-    const images = document.querySelectorAll('.image-container img') as NodeListOf<HTMLImageElement>;
-
-    images.forEach((image: HTMLImageElement) => {
-      image.classList.add('pulsate');
-    });
-  }, []);
 
   const handleImageHover = (e: React.MouseEvent<HTMLDivElement>) => {
     const target = e.currentTarget as HTMLDivElement;
@@ -22,7 +15,7 @@ export default function About2() {
   };
 
   return (
-    <section className="about2 relative flex justify-center">
+    <section className="relative flex bg-white h-max z-1">
       <div className="grid gap-8 m-10">
         <div className="text-container m-10">
           <p className="text-4xl font-bold pb-4 ml-2 pt-2">
@@ -40,27 +33,19 @@ export default function About2() {
           </p>
         </div> 
         
-        <div className="image-grid grid grid-cols-3 gap-8 pt-10">
-  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-    <img className="rounded-lg large-image" src="culture/Kazan.jpeg" alt="Kazan Image" loading="lazy" />
-  </div>
-  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-    <img className="rounded-lg large-image" src="culture/Nevsky.jpg" alt="Nevsky Image" loading="lazy" />
-  </div>
-  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-    <img className="rounded-lg large-image" src="culture/Peterhof.jpeg" alt="Peterhof Image" loading="lazy" />
-  </div>
-  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-    <img className="rounded-lg large-image" src="culture/hermitage.jpeg" alt="Hermitage Image" loading="lazy" />
-  </div>
-  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-    <img className="rounded-lg large-image" src="culture/hermitage.jpeg" alt="Hermitage Image" loading="lazy" />
-  </div>
-  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-    <img className="rounded-lg large-image" src="culture/hermitage.jpeg" alt="Hermitage Image" loading="lazy" />
-  </div>
-</div>
+        <div className="image-grid grid grid-cols-3 gap-8">
+          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+            <img className="rounded-lg large-image hover:scale-105" src="culture/Kazan.jpeg" alt="Kazan Image" loading="lazy" />
+          </div>
+        
+          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+            <img className="rounded-lg large-image hover:scale-105" src="culture/Kazan.jpeg" alt="Kazan Image" loading="lazy" />
+          </div>
 
+          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+            <img className="rounded-lg large-image hover:scale-105" src="culture/Kazan.jpeg" alt="Kazan Image" loading="lazy" />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -92,7 +92,7 @@ function Anket() {
           <div className="vertical-line"></div>
 
           <div className="flex flex-col items-start ml-4 mt-4">
-            <p className="text-4xl font-bold mb-4 text-left mt-12">
+            <p className="text-6xl font-bold mb-4 text-left mt-12">
               С чем у вас <br />
               ассоциируется <br />
               Санкт-Петербург?
