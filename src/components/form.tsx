@@ -5,7 +5,7 @@ import "@/components/styles/Form.scss";
 export default function Form() {
   return (
     <section className=" section relative  h-max ">
-      <div className=" flex flex-row w-full z-1 ">
+      <div className=" flex flex-row w-124 z-1 ">
         <div className="basis-2/3 flex justify-start items-center">
           <div className=" container w-max  rounded flex flex-col ">
             <div className="m-9 text-5xl">Свяжитесь с нами</div>
