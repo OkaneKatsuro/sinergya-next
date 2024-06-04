@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect } from 'react';
-import Image from "next/image";
 import "@/components/styles/About2.scss";
 
 export default function About2() {
@@ -24,8 +23,8 @@ export default function About2() {
 
   return (
     <section className="about2 relative flex justify-center">
-      <div className="grid grid-cols-3 gap-3 m-10">
-         <div className="text-container col-span-2 m-10">
+      <div className="grid gap-8 m-10">
+        <div className="text-container m-10">
           <p className="text-4xl font-bold pb-4 ml-2 pt-2">
             Фонд развития культурно-делового сотрудничества городов-побратимов
             Санкт-Петербурга «СИНЕРГИЯ»
@@ -41,21 +40,27 @@ export default function About2() {
           </p>
         </div> 
         
-        <div className="grid grid-cols-2 gap-8 pt-10">
-          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-            <img className="rounded-lg large-image" src="culture/Kazan.jpeg" alt="" loading="lazy" />
-          </div>
-          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-            <img className="rounded-lg large-image" src="culture/Kazan.jpeg" alt="" loading="lazy" />
-          </div>
-          
-          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-            <img className="rounded-lg large-image" src="culture/Kazan.jpeg" alt="" loading="lazy" />
-          </div>
-          <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
-            <img className="rounded-lg large-image" src="culture/Kazan.jpeg" alt="" loading="lazy" />
-          </div>
-        </div>
+        <div className="image-grid grid grid-cols-3 gap-8 pt-10">
+  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+    <img className="rounded-lg large-image" src="culture/Kazan.jpeg" alt="Kazan Image" loading="lazy" />
+  </div>
+  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+    <img className="rounded-lg large-image" src="culture/Nevsky.jpg" alt="Nevsky Image" loading="lazy" />
+  </div>
+  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+    <img className="rounded-lg large-image" src="culture/Peterhof.jpeg" alt="Peterhof Image" loading="lazy" />
+  </div>
+  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+    <img className="rounded-lg large-image" src="culture/hermitage.jpeg" alt="Hermitage Image" loading="lazy" />
+  </div>
+  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+    <img className="rounded-lg large-image" src="culture/hermitage.jpeg" alt="Hermitage Image" loading="lazy" />
+  </div>
+  <div className="image-container" onMouseEnter={handleImageHover} onMouseLeave={handleImageLeave}>
+    <img className="rounded-lg large-image" src="culture/hermitage.jpeg" alt="Hermitage Image" loading="lazy" />
+  </div>
+</div>
+
       </div>
     </section>
   );

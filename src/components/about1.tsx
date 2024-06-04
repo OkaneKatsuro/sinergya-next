@@ -96,8 +96,8 @@ export default function About1() {
             </div>
           </div>
         </div>
-        <div className="image-container absolute top-0 right-0 mb-8 mr-8 z-1">
-        <Image src="./atom.svg" alt="atom" width={200} height={200} />
+        <div className="image-container lg:absolute top-0 right-0 mt-8 lg:mt-12 mr-8 lg:mr-12 z-1">
+        <Image src="./atom.svg" alt="atom" width={300} height={300} className="atom-image pulsate" />
       </div>
       </div>
     </section>
