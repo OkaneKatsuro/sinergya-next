@@ -1,4 +1,13 @@
-.section {
+.section2 {
+  
+    position: relative;
+  
+    // Переменные цветов
+    $topColor: #fff; // Серый цвет
+    $bottomColor: #F3F4FE; // Белый цвет
+  
+    // Создание градиента с помощью линейного градиента
+    background: linear-gradient(to bottom, $topColor 50%, $bottomColor 50%);
     .flex-row {
       display: flex;
       align-items: flex-start;
@@ -12,10 +21,7 @@
       display: block;
     }
   
-    .flex {
-      display: flex;
-      align-items: flex-start;
-    }
+    
   
     .w-192 {
       width: 24rem; // 192px * 2 = 384px
@@ -31,6 +37,10 @@
   
     .bg-gray-100 {
       min-height: auto; // Remove minimum height to make the section smaller
+    }
+
+    .bg{
+      
     }
   }
   
