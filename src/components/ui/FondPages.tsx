@@ -25,7 +25,7 @@ export default function Dropdown(props: Props) {
     <>
       <div className="relative flex items-center justify-center">
         <button
-          className="focus:text-blue-400 flex flex-row items-center "
+          className=" text-lg *:focus:text-blue-400 flex flex-row items-center "
           onClick={toggle}
         >
           О нас
@@ -36,7 +36,7 @@ export default function Dropdown(props: Props) {
           </IconContext.Provider>
         </button>
         <div
-          className={`absolute top-10 z-30 w-max h-max flex flex-col py-4 bg-slate-200/75 rounded-md ${transClass}`}
+          className={`absolute top-16 z-30 w-max h-max flex flex-col py-4 bg-slate-200/75 rounded-md ${transClass}`}
         >
           {menuItems.map((item) => (
             <Link
