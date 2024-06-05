@@ -39,9 +39,9 @@ function Anket() {
   };
 
   return (
-    <section className="section relative h-max ">
-      <div className=" flex items-center justify-center min-h-screen ">
-        <div className="flex flex-row items-start">
+    <section className="section2 bg relative h-max  ">
+      <div className=" flex  items-center justify-center   ">
+        <div className="flex   space-x-8 items-center  ">
           <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-300 w-192 relative my-12">
             <div className="space-y-4">
               {Object.keys(votes).map((option) => (
@@ -111,7 +111,7 @@ function Anket() {
           </div>
 
           {/* Vertical line */}
-          <div className=" hidden md:vertical-line"></div>
+          <div className=" hidden md:flex w-2 bg-black h-96"></div>
 
           <div className="hidden md:flex flex-col items-start ml-4 mt-4">
             <p className="text-4xl font-bold mb-4 text-left mt-12">

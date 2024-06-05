@@ -7,7 +7,7 @@ export default function Form() {
     <section className=" section flex justify-center">
       <div className=" flex flex-row z-1">
         <div className="flex items-center mt-20">
-          <div className=" container w-max  rounded flex flex-col ">
+          <div className="hidden md:flex container w-max  rounded  flex-col ">
             <div className="m-9 text-5xl">Свяжитесь с нами</div>
             <div className="flex flex-row m-9 pt-14 space-x-10">
               <div className="container flex flex-col">
