@@ -35,8 +35,10 @@ const Hero = () => {
         loop
       ></video>
 
-      <div className=" fixed inset-0 flex items-center  text-white inset-y-0 left-0 pl-20 ">
-        <h1 className="text-5xl  font-bold basis-1/3 ">{typedText}</h1>
+      <div className=" fixed inset-0 flex items-center justify-center text-center text-white inset-y-0 left-0 pl-20 ">
+        <h1 className="text-5xl  font-bold basis-2/3 justify-center ">
+          {typedText}
+        </h1>
       </div>
     </section>
   );
