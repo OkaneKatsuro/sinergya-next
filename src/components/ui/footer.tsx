@@ -1,61 +1,71 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import "@/components/styles/Footer.scss";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <section className=" relative bg-black h-96   ">
-      <div className=" pl-8 flex">
-        <div className="grid grid-cols-4 gap-4 text-white px-7 pt-7 basis-4/5  size-fit z-20">
-          <div className="text-xl pl-5 grid-rows-subgrid-3 gap-4  w-40 ">
-            <p className="text-3xl font-bold pb-4 ">СИНЕРГИЯ</p>
-            <p className=" text-sm ">
-              Фонд развития культурно-делового сотрудничества городов-побратимов
-              Санкт-Петербурга «СИНЕРГИЯ»
-            </p>
-          </div>
+    <section className="relative bg-black h-50 text-white">
+      <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div>
+          <h2 className="text-3xl font-bold">СИНЕРГИЯ</h2>
+          <p className="text-sm mt-2">
+            Фонд развития культурно-делового сотрудничества городов-побратимов Санкт-Петербурга «СИНЕРГИЯ»
+          </p>
+        </div>
 
-          <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
-            <div>
-              <p className=" pb-4">Карта сайта</p>
-              <p>Главная</p>
-              <p>Новости</p>
-              <p>Партнеры</p>
-            </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 lg:col-span-2">
+          <div className="footer-column flex flex-col">
+            <p className="text-xl font-bold pb-2">Карта сайта</p>
+            <Link href="/" passHref>
+              <span className="text-sm cursor-pointer">Главная</span>
+            </Link>
+            <Link href="/news" passHref>
+              <span className="text-sm cursor-pointer">Новости</span>
+            </Link>
+            <Link href="/towns" passHref>
+              <span className="text-sm cursor-pointer">Города-побратимы</span>
+            </Link>
           </div>
-          <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
-            <div>
-              <p className=" pb-4">Фонд</p>
-              <p>Цели и задачи</p>
-              <p>Отчеты</p>
-              <p>Реквизиты</p>
-            </div>
+          <div className="footer-column flex flex-col">
+            <p className="text-xl font-bold pb-2">Фонд</p>
+            <Link href="/aim" passHref>
+              <span className="text-sm cursor-pointer">Цели и задачи</span>
+            </Link>
+            <Link href="/reports" passHref>
+              <span className="text-sm cursor-pointer">Отчеты</span>
+            </Link>
+            <Link href="/requisites" passHref>
+              <span className="text-sm cursor-pointer">Реквизиты</span>
+            </Link>
           </div>
-          <div className="text-xl  grid-rows-subgrid-3 gap-4 pl-7 ">
-            <div>
-              <p className=" pb-4">Информация</p>
-              <p>История</p>
-              <p>О нас</p>
-              <p>Документы</p>
-            </div>
+          <div className="footer-column flex flex-col">
+            <p className="text-xl font-bold pb-2">Информация</p>
+            <Link href="/history" passHref>
+              <span className="text-sm cursor-pointer">История</span>
+            </Link>
+            <Link href="/culture" passHref>
+              <span className="text-sm cursor-pointer">Культура</span>
+            </Link>
+            <Link href="/economics" passHref>
+              <span className="text-sm cursor-pointer">Экономика</span>
+            </Link>
           </div>
         </div>
       </div>
-      <div className="px-12 py-8">
-        <hr className="w-full h-0.5 border-0 bg-white/50 place-self-center   " />
-      </div>
-      <div className="flex flex-row justify-between gap-6 px-12 ">
-        <p className="text-white">2023 Фонд "СИНЕРГИЯ"</p>
-        <p className="text-white">
+
+      <hr className="bg-white/50 h-0.5" />
+
+      <div className="container mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center">
+        <p className="text-sm">&copy; 2023 Фонд "СИНЕРГИЯ"</p>
+        <p className="text-sm">
           Все права на сайт защищены и охраняются законодательством РФ
         </p>
-        <p className="text-white">Дизайн и разработка</p>
+        <p className="text-sm">Дизайн и разработка</p>
       </div>
 
-      <div className="absolute top-0 right-0 mb-8 mr-8 z-1">
-        <Image src="./atom.svg" alt="atom" width={200} height={200} />
-      </div>
-      <div className="absolute bottom-0 right-0  z-0">
-        <Image src="./shape-3.svg" alt="shape3" width={300} height={300} />
+      <div className="image-container lg:absolute top-0 right-0 mt-8 lg:mt-4 mr-8 lg:mr-12 z-1">
+        <Image src="./atom.svg" alt="atom" width={300} height={300} className="atom-image2 pulsate" />
       </div>
     </section>
   );

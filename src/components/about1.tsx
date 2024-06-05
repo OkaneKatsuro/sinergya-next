@@ -1,10 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
 import Image from "next/image";
 import "@/components/styles/About1.scss";
+import { useEffect } from "react";
 
 export default function About1() {
+  useEffect(() => {
+    const images = document.querySelectorAll(
+      ".image-container img"
+    ) as NodeListOf<HTMLImageElement>;
+
+    images.forEach((image: HTMLImageElement) => {
+      image.classList.add("pulsate");
+    });
+  }, []);
   return (
-    <section className=" relative flex  bg-white h-max z-1 w-    py-32 ">
+    <section className=" relative flex  bg-white h-max z-1 py-10">
       <div className=" mx-20  flex flex-col space-y-7">
         <div className="flex-col w-3/5 space-y-9">
           <p className="text-5xl font-bold  ">Мы – То, Что Мы Делаем</p>

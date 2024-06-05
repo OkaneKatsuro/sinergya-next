@@ -17,24 +17,24 @@ export default function News() {
       image: "darVostok.jpg",
       link: "https://www.dp.ru/a/2018/10/24/Konferencija_o_sozdanii_ezh"
     },
-    /*{
+    {
       date: "Dec 22, 2023",
       title: "The no-fuss guide to upselling and cross selling",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      image: "assets/images/Петру.jpg",
-      link: "blog-details.html"
-    }*/
+      description: "",
+      image: "darVostok.jpg",
+      link: "https://www.dp.ru/a/2018/10/24/Konferencija_o_sozdanii_ezh"
+    },
   ];
 
   return (
-    <section className="relative flex bg-white h-max z-1 w-full py-32">
-      <div className="max-w-screen-lg mx-auto py-16">
+    <section className="relative flex bg-white h-max z-1 w-full justify-center">
+      <div className="max-w-screen-lg py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden w-256">
               <div className="overflow-hidden">
                 <a href={blog.link}>
-                  <img src={blog.image} alt="blog" className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" />
+                  <img src={blog.image} alt="blog" className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
                 </a>
               </div>
               <div className="p-6">

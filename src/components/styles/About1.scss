@@ -1,9 +1,44 @@
-.relative {
-    .hover\:rotate-45 {
-        transition: transform 0.3s ease; // добавляем плавность анимации
-
-        &:hover {
-            transform: rotate(45deg);
-        }
-    }
+.about1{
+    background: #F3F4FE;
 }
+
+section {
+    @media (max-width: 1200px) {
+      .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+  
+      .text-container {
+        width: 24rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+  
+      .hide-on-small {
+        display: none;
+      }
+    }
+  
+    @media (max-width: 640px) {
+      .image-container {
+        display: none; // Скрыть все изображения на очень маленьких экранах
+      }
+    }
+  
+    .atom-image {
+      animation: pulsate 1.5s ease-in-out infinite;
+    }
+  
+    @keyframes pulsate {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
