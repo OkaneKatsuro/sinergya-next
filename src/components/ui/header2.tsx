@@ -69,8 +69,8 @@ const Header = () => {
   };
 
   return (
-    <header className="   bg-slate-200/75  z-10 border-gray-200 px-4 lg:px-6 py-5 dark:bg-gray-800">
-      <div className="flex  justify-between items-center mx-auto max-w-screen-xl">
+    <header className="  fixed w-screen bg-slate-200/75  z-10 border-gray-200 px-4 lg:px-6 py-5 dark:bg-gray-800">
+      <div className="flex  md:justify-start justify-between items-center mx-auto max-w-screen-xl">
         <div className="flex flex-row space-x-2  ">
           <Link className="hidden md:flex flex-col justify-items-end" href="/">
             <div className="flex  mb-[-10px] flex-row-reverse   ">
@@ -90,14 +90,14 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className=" hidden md:flex  items-center justify-end space-x-10 mx-10">
-          <a href="/towns" className="text-sm ">
+        <div className="  hidden md:flex   items-center space-x-10 mx-10">
+          <a href="/towns" className="text-lg ">
             Города-побратимы
           </a>
           <div className="flex gap-x-12 items-end">
             <button
               onClick={openOffcanvas}
-              className="text-sm focus:outline-none"
+              className="text-lg focus:outline-none"
             >
               Контакты
             </button>

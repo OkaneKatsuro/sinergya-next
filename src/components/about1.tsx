@@ -1,15 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
+"use client";
 import Image from "next/image";
 import "@/components/styles/About1.scss";
 import { useEffect } from "react";
 
 export default function About1() {
   useEffect(() => {
-    const images = document.querySelectorAll('.image-container img') as NodeListOf<HTMLImageElement>;
+    const images = document.querySelectorAll(
+      ".image-container img"
+    ) as NodeListOf<HTMLImageElement>;
 
     images.forEach((image: HTMLImageElement) => {
-      image.classList.add('pulsate');
+      image.classList.add("pulsate");
     });
   }, []);
   return (
@@ -55,11 +57,12 @@ export default function About1() {
                 <div className="w-16 h-16 bg-fuchsia-700/20 rotate-45 absolute inset-x-0 top-0 rounded-xl hover:rotate-12 transition-all duration-300"></div>
               </div>
               <p className="font-bold">
-              Организация культурных мероприятий и 
-              фестивалей для популяризации культурных ценностей
+                Организация культурных мероприятий и фестивалей для
+                популяризации культурных ценностей
               </p>
               <p className="text-gray-400">
-              Поддержка научных и научно-образовательных проектов для повышения инновационного потенциала города.
+                Поддержка научных и научно-образовательных проектов для
+                повышения инновационного потенциала города.
               </p>
             </div>
           </div>
@@ -72,10 +75,11 @@ export default function About1() {
                 <div className="w-16 h-16 bg-fuchsia-700/20 rotate-45 absolute inset-x-0 top-0 rounded-xl hover:rotate-12 transition-all duration-300"></div>
               </div>
               <p className="font-bold">
-              Помощь пострадавшим от стихийных бедствий и кризисных ситуаций
+                Помощь пострадавшим от стихийных бедствий и кризисных ситуаций
               </p>
               <p className="text-gray-400">
-              Реализация социальных программ и мероприятий для поддержки различных категорий граждан.
+                Реализация социальных программ и мероприятий для поддержки
+                различных категорий граждан.
               </p>
             </div>
           </div>
@@ -88,17 +92,26 @@ export default function About1() {
                 <div className="w-16 h-16 bg-fuchsia-700/20 rotate-45 absolute inset-x-0 top-0 rounded-xl hover:rotate-12 transition-all duration-300"></div>
               </div>
               <p className="font-bold">
-              Проведение мероприятий и кампаний для укрепления позитивного восприятия Санкт-Петербурга как города культуры, науки и инноваций
+                Проведение мероприятий и кампаний для укрепления позитивного
+                восприятия Санкт-Петербурга как города культуры, науки и
+                инноваций
               </p>
               <p className="text-gray-400">
-              Активное участие в международных процессах и мероприятиях для повышения привлекательности города для жителей и инвесторов.
+                Активное участие в международных процессах и мероприятиях для
+                повышения привлекательности города для жителей и инвесторов.
               </p>
             </div>
           </div>
         </div>
-        <div className="image-container lg:absolute top-0 right-0 mt-8 lg:mt-12 mr-8 lg:mr-12 z-1">
-        <Image src="./atom.svg" alt="atom" width={300} height={300} className="atom-image pulsate" />
-      </div>
+        <div className=" hidden md:image-container lg:absolute top-0 right-0 mt-8 lg:mt-12 mr-8 lg:mr-12 z-1">
+          <Image
+            src="./atom.svg"
+            alt="atom"
+            width={300}
+            height={300}
+            className="atom-image pulsate"
+          />
+        </div>
       </div>
     </section>
   );
