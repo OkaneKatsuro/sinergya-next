@@ -27,14 +27,14 @@ export default function News() {
   ];
 
   return (
-    <section className="relative flex bg-white h-max z-1 w-full">
-      <div className="max-w-screen-lg mx-auto py-16">
+    <section className="relative flex bg-white h-max z-1 w-full justify-center">
+      <div className="max-w-screen-lg py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
+            <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden w-256">
               <div className="overflow-hidden">
                 <a href={blog.link}>
-                  <img src={blog.image} alt="blog" className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105" />
+                  <img src={blog.image} alt="blog" className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105" />
                 </a>
               </div>
               <div className="p-6">
