@@ -32,7 +32,7 @@ export default function About2() {
           </p>
         </div>
 
-        <div className="image-grid grid grid-cols-3 gap-8">
+        <div className="image-grid grid gap-8 md:flex md:flex-row">
           <div
             className="image-container"
             onMouseEnter={handleImageHover}
