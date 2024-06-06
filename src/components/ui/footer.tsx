@@ -14,6 +14,7 @@ export default function Footer() {
         Фонд развития культурно-делового сотрудничества городов-побратимов Санкт-Петербурга «СИНЕРГИЯ»
       </p>
     </div>
+    {/* Одна колонка для маленьких экранов */}
     <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 lg:col-span-2">
       <div className="footer-column flex flex-col">
         <p className="text-xl font-bold pb-2">Карта сайта</p>
@@ -52,7 +53,6 @@ export default function Footer() {
         </Link>
       </div>
     </div>
-    {/* Одна колонка для маленьких экранов */}
     <div className="md:hidden text-center">
       <h2 className="text-3xl font-bold">СИНЕРГИЯ</h2>
       <p className="text-sm mt-2">
