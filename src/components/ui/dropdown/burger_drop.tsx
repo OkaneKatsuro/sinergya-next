@@ -7,6 +7,7 @@ import { MenuItem } from "@/components/ui/header";
 
 import { IconContext } from "react-icons";
 import { IoIosArrowDown } from "react-icons/io";
+import Offcanvas from "../Offcanvas";
 
 interface Props {
   item: MenuItem;
@@ -21,6 +22,15 @@ export default function BurgerDropdown(props: Props) {
     setIsOpen((old) => !old);
   };
 
+  const [isOpenn, setIsOpenn] = useState(false);
+
+  const openOffcanvas = () => {
+    setIsOpenn(!isOpenn);
+  };
+
+  const closeOffcanvas = () => {
+    setIsOpenn(false);
+  };
   const transClass = isOpen ? "flex" : "hidden";
 
   return (
@@ -36,6 +46,12 @@ export default function BurgerDropdown(props: Props) {
         <div
           className={`absolute top-10 right-0 z-30 w-max h-max flex flex-col py-4 bg-slate-200/75 rounded-md ${transClass}`}
         >
+          <button
+            onClick={openOffcanvas}
+            className="text-lg focus:outline-none px-4 py-1 text-left"
+          >
+            Контакты
+          </button>
           {menuItems.map((item) => (
             <Link
               key={item.route}
@@ -56,6 +72,7 @@ export default function BurgerDropdown(props: Props) {
       ) : (
         <></>
       )}
+      {isOpenn && <Offcanvas onClose={closeOffcanvas} />}
     </>
   );
 }
