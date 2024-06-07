@@ -9,14 +9,14 @@ export default function PetersburgSoul() {
         </h2>
         <a
           href="http://migrantinfo.kmormp.gov.spb.ru/media/uploads/userfiles/2024/01/31/Указ_от_09.11.2022_N_809_zukfNqN.pdf"
-          className="text-blue-500 hover:text-blue-700 transition duration-300 transform hover:scale-105 underline text-gray-500 mb-10"
+          className="text-blue-500 hover:text-blue-700 transition duration-300 transform hover:scale-105 underline text-gray-500 mb-10 sm:px-4"
         >
           Указ Президента РФ от 09.11.2022 № 809 "Об утверждении Основ
           государственной политики по сохранению и укреплению традиционных
           российских духовно-нравственных ценностей"
         </a>
 
-        <div className="text-black-700 mb-10">
+        <div className="text-black-700 mb-10 px-4 sm:px-4 text-sm">
           <p className="mt-4 mb-4">
             <strong>Традиционные ценности</strong> - это нравственные ориентиры,
             формирующие мировоззрение граждан России, передаваемые от поколения
@@ -127,7 +127,7 @@ export default function PetersburgSoul() {
           </ul>
         </div>
 
-        <div className="text-black-700">
+        <div className="text-black-700 sm:px-4 text-sm">
           <p>
             Христианство, ислам, буддизм, иудаизм и другие религии, являющиеся
             неотъемлемой частью российского исторического и духовного наследия,

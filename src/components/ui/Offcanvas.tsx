@@ -10,7 +10,7 @@ interface OffcanvasProps {
 
 const Offcanvas: React.FC<OffcanvasProps> = ({ onClose }) => {
   return (
-    <div className="offcanvas flex items-center ">
+    <div className="offcanvas flex items-center z-40 ">
       <div className=" absolute top-0">
         <button
           type="button"
