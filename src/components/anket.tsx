@@ -39,7 +39,7 @@ function Anket() {
   };
 
   return (
-    <section className="section2 bg relative h-max  ">
+    <section className="section2 bg relative h-max">
       <div className="flex flex-col items-center justify-center">
         {/* Text for small screens */}
         <div className="md:hidden flex flex-col items-center mt-4">
@@ -51,7 +51,7 @@ function Anket() {
         </div>
 
         <div className="flex flex-col md:flex-row md:space-x-8 items-center">
-          <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-300 w-192 relative my-12">
+          <div className="bg-white p-4 md:p-6 rounded-2xl shadow-lg border-2 border-gray-300 w-full md:w-192 relative my-6 md:my-12">
             <div className="space-y-4">
               {Object.keys(votes).map((option) => (
                 <div key={option}>
@@ -102,7 +102,7 @@ function Anket() {
               ))}
             </div>
             {!voted && (
-              <div className="flex justify-end">
+              <div className="flex justify-end mt-4">
                 <button
                   onClick={handleVote}
                   className="bg-purple-600 text-white px-4 py-2 rounded"
@@ -113,7 +113,7 @@ function Anket() {
             )}
 
             {voted && (
-              <div className="text-center text-gray-700">
+              <div className="text-center text-gray-700 mt-4">
                 Спасибо за ваш голос!
               </div>
             )}
