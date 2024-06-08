@@ -64,7 +64,7 @@ export default function Footer() {
 
   <hr className="bg-white/50 h-0.5" />
 
-  <div className="container mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center">
+  <div className="container mx-auto px-2 py-2 flex flex-col md:flex-row justify-between items-center">
     <p className="text-sm">&copy; 2023 Фонд "СИНЕРГИЯ"</p>
     <p className="text-sm">
       Все права на сайт защищены и охраняются законодательством РФ
