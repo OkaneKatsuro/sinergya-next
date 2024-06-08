@@ -16,8 +16,8 @@ export default function About2() {
   return (
     <section className="relative flex bg-white h-max z-1">
       <div className="grid gap-8 m-10">
-        <div className="text-container m-10">
-          <p className="text-4xl font-bold pb-4 ml-2 pt-2">
+        <div className="text-center w-full md:w-3/5 mx-auto space-y-9">
+          <p className="text-3xl md:text-5xl font-bold">
             Фонд развития культурно-делового сотрудничества городов-побратимов
             Санкт-Петербурга «СИНЕРГИЯ»
           </p>
