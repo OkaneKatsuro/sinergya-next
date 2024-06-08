@@ -50,7 +50,7 @@ function Anket() {
           </p>
         </div>
 
-        <div className="flex space-x-8 items-center">
+        <div className="flex flex-col md:flex-row md:space-x-8 items-center">
           <div className="bg-white p-6 rounded-2xl shadow-lg border-2 border-gray-300 w-192 relative my-12">
             <div className="space-y-4">
               {Object.keys(votes).map((option) => (
