@@ -23,7 +23,7 @@ export default function Economics() {
           </div>
         </figure>
 
-        <div className="pt-6 md:pt-8 text-justify md:text-left space-y-4">
+        <div className="pt-6 md:pt-8 text-justify md:text-left space-y-4 px-6 md:px-2">
           <p className="text-base font-medium text-black">
             Высший исполнительный орган государственной власти Санкт‑Петербурга — <a href="#">Правительство</a>, формируемое Губернатором.
           </p>

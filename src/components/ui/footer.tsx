@@ -66,8 +66,8 @@ export default function Footer() {
 
   <div className="container mx-auto px-2 py-2 flex flex-col md:flex-row justify-between items-center">
     <p className="text-sm">&copy; 2023 Фонд "СИНЕРГИЯ"</p>
-    <p className="text-sm">
-      Все права на сайт защищены и охраняются законодательством РФ
+    <p className="text-sm text-center">
+      Все права на сайт защищены и охраняются <br />законодательством РФ
     </p>
     <p className="text-sm">Дизайн и разработка</p>
   </div>
