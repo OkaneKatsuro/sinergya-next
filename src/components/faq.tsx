@@ -9,8 +9,8 @@ const items = [
 
 const Faq: React.FC = () => {
   return (
-    <section className="  relative flex bg-white h-max z-1 w-screen justify-center ">
-      <div className="flex flex-row space-x-5 py-10">
+    <section className="relative flex bg-white h-max z-1 w-screen justify-center">
+      <div className="flex flex-col md:flex-row md:space-x-5 py-10">
         <div className="flex flex-col mx-6 space-y-10">
           <div className="border-2 p-4 rounded-lg">
             <ExpandableText
@@ -27,11 +27,11 @@ const Faq: React.FC = () => {
           <div className="border-2 p-4 rounded-lg">
             <ExpandableText
               text={"В рамках конференции был достигнут целый ряд договоренностей по развитию дальнейшего сотрудничества и реализации совместных проектов, а также составлен проект резолюции о создании ежегодного фестиваля"}
-              title={"Конферения городов-побратимов"}
+              title={"Конференция городов-побратимов"}
             />
           </div>
         </div>
-        <div className="flex flex-col pr-6 space-y-10">
+        <div className="flex flex-col mx-6 space-y-10 mt-10 md:mt-0">
           <div className="border-2 p-4 rounded-lg">
             <ExpandableText
               text={"Открытие ежегодного фестиваля является уникальной возможностью для создания новой платформы по обмену опытом и знаниями между участниками фестиваля, что способствует привлечению в регион культурного, технического и экономического опыта, повышению международного имиджа Санкт-Петербурга, а также привлечению инвестиций в местную экономику"}
