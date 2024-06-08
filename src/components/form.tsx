@@ -29,9 +29,9 @@ export default function Form() {
           <div className="bg-white drop-shadow-lg container w-max rounded py-8 mx-auto">
             <div className="m-9">
               <form>
-                <div>
-                  <h2 className="text-3xl font-semibold">Отправьте нам письмо</h2>
-                </div>
+              <div className="justify-center items-center text-center md:text-center ms:text-center"> {/* Изменено */}
+  <h2 className="text-3xl font-semibold">Отправьте нам письмо</h2>
+</div>
                 <div className="mt-3 grid grid-cols-1 gap-x-6 gap-y-8">
                   <div className="col-span-4">
                     <div className="space-y-10">
