@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import "@/components/styles/History.scss";
+
 export default function History() {
   return (
     <section className=" relative flex  bg-white h-max z-1 w-    py-32 ">
