@@ -1,13 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+import "@/components/styles/Aim.scss";
 export default function Aim() {
   return (
-    <section className="relative bg-white h-max z-1 w-full py-32 flex justify-center">
-      <div className="mx-20 flex flex-col space-y-7">
+    <section className="relative bg-white h-max z-1 w-full md:flex justify-center">
+      <div className="md:py-32 flex justify-center">
         <div className="max-w-screen-lg ">
-          <h2 className="text-3xl font-bold mb-8 text-center">
+          <h2 className="text-3xl font-bold mb-6 md:mb-8 text-center md:text-left mt-20 mx-4">
             Основные направления Фонда
           </h2>
-          <ul className="list-disc pl-6 mb-8">
+          <ul className="list-disc pl-6 mb-8 ml-6">
             <li className="mb-4">
               <span className="text-xl font-semibold">
                 Международное сотрудничество и привлечение инвестиций:
@@ -66,9 +67,9 @@ export default function Aim() {
           <a
           href="Ustav.pdf"
           download
-          className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="inline-block bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded text-center md:text-left mb-8 ml-6"
         >
-          Устав фонда "Синергия"
+          Устав фонда СИНЕРГИЯ
         </a>
         </div>
       </div>
