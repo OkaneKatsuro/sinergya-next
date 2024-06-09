@@ -82,12 +82,14 @@ const Header = () => {
           </Link>
           <div className=" hidden md:flex w-1 bg-black  "></div>
           <div className=" flex items-center   ">
-            <Image
-              src="./atom_black.svg"
-              alt="atom_black"
-              width={40}
-              height={40}
-            />
+            <Link href={"/"}>
+              <Image
+                src="./atom_black.svg"
+                alt="atom_black"
+                width={40}
+                height={40}
+              />
+            </Link>
           </div>
         </div>
         <div className="  hidden md:flex   items-center space-x-10 mx-10">
