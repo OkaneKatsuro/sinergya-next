@@ -57,6 +57,50 @@ const menuItems: MenuItem[] = [
     ],
   },
 ];
+const menuItemsForBurger: MenuItem[] = [
+  {
+    title: "Products",
+    children: [
+      {
+        title: "История",
+        route: "/history",
+      },
+      {
+        title: "Цели и задачи",
+        route: "aim",
+      },
+      {
+        title: "Новости",
+        route: "/news",
+      },
+      {
+        title: "Услуги в сфере миграции",
+        route: "/migration",
+      },
+      {
+        title: "Экономика Сaнкт-Петербурга",
+        route: "/economics",
+      },
+      {
+        title: "Культура Сaнкт-Петербурга",
+        route: "/culture",
+      },
+      {
+        title: "Духовно-нравственные ценности",
+        route: "/petersburgSoul",
+      },
+      {
+        title: "Реквизиты",
+        route: "/requisites",
+      },
+      {
+        title: "Отчеты",
+        route: "/reports",
+      },
+      { title: "Города-побратимы", route: "/towns" },
+    ],
+  },
+];
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -115,7 +159,7 @@ const Header = () => {
           })}
         </div>
 
-        {menuItems.map((item) => {
+        {menuItemsForBurger.map((item) => {
           return item.hasOwnProperty("children") ? (
             <BurgerDropdown item={item} />
           ) : (
