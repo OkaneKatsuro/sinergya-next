@@ -28,7 +28,7 @@ export default function About2() {
             общественно-полезные цели, глав.цель - развитие международного,
             внешнеэкономического и межрегионального сотрудничества
             Санкт-Петербурга с зарубежными странами и субъектами РФ, укрепление
-            межнационального согласия.
+            межнационального согласия
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function About2() {
           >
             <img
               className="rounded-lg large-image hover:scale-105"
-              src="culture/Kazan.jpeg"
+              src="culture/Peterhof.jpeg"
               alt="Kazan Image"
               loading="lazy"
             />
@@ -66,7 +66,7 @@ export default function About2() {
           >
             <img
               className="rounded-lg large-image hover:scale-105"
-              src="culture/Kazan.jpeg"
+              src="culture/hermitage.jpeg"
               alt="Kazan Image"
               loading="lazy"
             />
