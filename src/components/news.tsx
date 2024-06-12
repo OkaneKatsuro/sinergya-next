@@ -27,7 +27,7 @@ export default function News() {
   ];
 
   return (
-    <section className="relative flex bg-white h-max z-1 w-full justify-center">
+    <section className="relative flex bg-white h-max z-1 w-full justify-center py-32">
       <div className="max-w-screen-lg py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs.map((blog, index) => (

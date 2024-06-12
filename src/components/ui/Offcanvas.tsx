@@ -30,7 +30,6 @@ const Offcanvas: React.FC<OffcanvasProps> = ({ onClose }) => {
             Контактная информация про организацию
           </p>
           <p className="text-base">Вся Россия: +7 (911) 109-09-79</p>
-          <p className="text-base">Санкт-Петербург: +7 (911) 109-09-79</p>
           <p className="text-base">Электронная почта: fond.synergy@mail.ru</p>
           <p className="text-base">Адрес: ул Славянская, дом 3</p>
           <h3 className="text-2xl font-semibold">Режим работы</h3>

@@ -3,20 +3,20 @@ export default function PetersburgSoul() {
   return (
     <section className="relative flex bg-white h-max z-1 w-full py-32">
       <div className="max-w-screen-lg mx-auto">
-        <h2 className="text-3xl font-bold pb-10 text-center">
+        <h2 className="text-3xl lg:text-4xl font-bold pb-10 text-center">
           {" "}
           РОССИЙСКИЕ ДУХОВНО-НРАВСТВЕННЫЕ ЦЕННОСТИ
         </h2>
         <a
           href="http://migrantinfo.kmormp.gov.spb.ru/media/uploads/userfiles/2024/01/31/Указ_от_09.11.2022_N_809_zukfNqN.pdf"
-          className="text-blue-500 hover:text-blue-700 transition duration-300 transform hover:scale-105 underline text-gray-500 mb-10 sm:px-4 px-4 sm:px-4 text-sm"
+          className="text-blue-500 hover:text-blue-700 transition duration-300 transform hover:scale-105 underline text-gray-500 mb-10 sm:px-4 px-4 sm:px-4 text-base lg:text-lg"
         >
           Указ Президента РФ от 09.11.2022 № 809 "Об утверждении Основ
           государственной политики по сохранению и укреплению традиционных
           российских духовно-нравственных ценностей"
         </a>
 
-        <div className="text-black-700 mb-10 px-4 sm:px-4 text-sm">
+        <div className="text-black-700 mb-10 px-4 sm:px-4 text-base lg:text-lg">
           <p className="mt-4 mb-4">
             <strong>Традиционные ценности</strong> - это нравственные ориентиры,
             формирующие мировоззрение граждан России, передаваемые от поколения
@@ -61,73 +61,80 @@ export default function PetersburgSoul() {
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
-              <div className="hover:bg-gray-200 p-2 rounded-md">патриотизм</div>
-            </li>
-            <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                гражданственность
+              патриотизм
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                служение Отечеству и ответственность за его судьбу
+              гражданственность
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                высокие нравственные идеалы
+              служение Отечеству и ответственность за его судьбу
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                крепкая семья
+              высокие нравственные идеалы
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                созидательный труд
+              крепкая семья
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                приоритет духовного над материальным
-              </div>
-            </li>
-            <li className="hover:text-black transition duration-300">
-              <div className="hover:bg-gray-200 p-2 rounded-md">гуманизм</div>
-            </li>
-            <li className="hover:text-black transition duration-300">
-              <div className="hover:bg-gray-200 p-2 rounded-md">милосердие</div>
-            </li>
-            <li className="hover:text-black transition duration-300">
-              <div className="hover:bg-gray-200 p-2 rounded-md">
-                справедливость
+              созидательный труд
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                коллективизм
+              приоритет духовного над материальным
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                взаимопомощь и взаимоуважение
+              гуманизм
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                историческая память и преемственность поколений
+              милосердие
               </div>
             </li>
             <li className="hover:text-black transition duration-300">
               <div className="hover:bg-gray-200 p-2 rounded-md">
-                единство народов России
+              справедливость
               </div>
             </li>
+            <li className="hover:text-black transition duration-300">
+              <div className="hover:bg-gray-200 p-2 rounded-md">
+              коллективизм
+              </div>
+            </li>
+            <li className="hover:text-black transition duration-300">
+              <div className="hover:bg-gray-200 p-2 rounded-md">
+              взаимопомощь и взаимоуважение
+              </div>
+            </li>
+            <li className="hover:text-black transition duration-300">
+              <div className="hover:bg-gray-200 p-2 rounded-md">
+              историческая память и преемственность поколений
+              </div>
+            </li>
+            <li className="hover:text-black transition duration-300">
+              <div className="hover:bg-gray-200 p-2 rounded-md">
+              единство народов России
+              </div>
+            </li>
+            {/* Остальные элементы списка */}
           </ul>
         </div>
 
-        <div className="text-black-700 mb-10 px-4 sm:px-4 text-sm">
+        <div className="text-black-700 mb-10 px-4 sm:px-4 text-base lg:text-lg">
           <p>
             Христианство, ислам, буддизм, иудаизм и другие религии, являющиеся
             неотъемлемой частью российского исторического и духовного наследия,

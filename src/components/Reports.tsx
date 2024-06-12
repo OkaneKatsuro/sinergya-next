@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function Reports() {
   return (
-    <section className="relative flex bg-white h-max z-1 w-full py-32">
+    <section className="relative flex bg-white h-max z-1 w-full py-48 mb-60">
       <div className="max-w-screen-lg mx-auto">
         <h2 className="text-3xl font-bold pb-10 text-center">
           ОТЧЕТЫ ФОНДА "СИНЕРГИЯ"
