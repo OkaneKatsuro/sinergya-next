@@ -44,9 +44,7 @@ function Anket() {
         {/* Text for small screens */}
         <div className="md:hidden flex flex-col items-center mt-4">
           <p className="text-4xl font-bold mb-4 text-center">
-            С чем у вас <br />
-            ассоциируется <br />
-            Санкт-Петербург?
+            С чем у вас ассоциируется Санкт-Петербург?
           </p>
         </div>
 

@@ -8,7 +8,7 @@ export default function Economics() {
           <img className="w-1/2 md:w-1/3 h-auto mx-auto rounded-lg" src="/economics/Beglov.jpg" alt="" />
           <div className="pt-4 md:p-4 text-center md:text-left space-y-2">
             <blockquote>
-              <p className="text-sm md:text-base font-medium text-white">
+              <p className="text-sm md:text-base font-medium text-black">
                 “В структуре налоговых поступлений в бюджетную систему Российской Федерации промышленность Санкт‑Петербурга занимает 39,1%. Петербургская промышленность вышла на стабильно высокий уровень индекса промышленного производства: по итогам 2023 года - это 109,9 %, а в обрабатывающей промышленности - 111,4%. Увеличились объемы отгрузки продукции - до 4 трлн рублей, инвестиции заводов в собственный капитал по итогам 9 месяцев выросли на 28,8% относительно прошлогоднего периода. А это - обеспечение долгосрочного развития промышленности города и вклад в будущее за счет модернизации производственных фондов.”
               </p>
             </blockquote>
@@ -16,7 +16,7 @@ export default function Economics() {
               <div className="text-sky-500 dark:text-sky-400">
                 Беглов Александр Дмитриевич
               </div>
-              <div className="text-slate-700 dark:text-slate-500">
+              <div className="text-black-700 dark:text-black-500">
                 Губернатор Санкт‑Петербурга
               </div>
             </figcaption>
